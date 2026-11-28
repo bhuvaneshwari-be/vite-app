@@ -1,13 +1,12 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle.js'
-
+import FetchAPI from './advancedhooks/customhooks/FetchAPI.jsx'
 createRoot(document.getElementById('root')).render(
   <div>
-    <div className="h1 text-center ">WELCOME TO REACT VITE WORLD</div>
-
+    <StrictMode>
+      <FetchAPI/>
+    </StrictMode>
   </div>
 )
